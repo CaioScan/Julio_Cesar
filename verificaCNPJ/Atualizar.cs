@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 namespace verificaCNPJ
 {
     public class Atualizar
-    {
+    { 
         public static void PegaInformacoes()
         {
             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=2c7f4adfe2e51bd54772a8fd0aa0e124867206fe");
