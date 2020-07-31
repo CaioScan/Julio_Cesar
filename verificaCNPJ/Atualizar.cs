@@ -28,7 +28,7 @@ namespace verificaCNPJ
 
                 var Get = Newtonsoft.Json.JsonConvert.DeserializeObject<Get>(objResponse.ToString());
 
-                var decifrado = Decipher(Get.cifrado, Convert.ToInt32(Get.numero_casas));
+                var decifrado = Decipher(Get.cifrado, Get.numero_casas);
                 
                 var resumo_criptografico = Hash(decifrado);
 
